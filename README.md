@@ -6,7 +6,7 @@ This is a supervised machine learning model for text classification, as the mode
 |---------|-----------------|----------|------------|------------|------------|
 | 01      | NB (unigrams)   | 0.7925   | 0.85       | 0.74       | too pessimistic
 | 02      | NB (uni+bi)     | 0.8      | 0.84       | 0.76       | Slight improvement in positive recall but best to switch models
-
+| 03      | Logistic Regression | 0.8225 | 0.80     | 0.84       | Significant improvement in pos recall but not as good in neg
 ## Most “positive” and “negative” phrases according to version 03
 Top positive n-grams:
 - great

@@ -17,3 +17,5 @@ weighted avg       0.80      0.79      0.79       400
 
 Confusion Matrix:
  [[169  30],[ 53 148]]
+
+Model is too pessimistic 

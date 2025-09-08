@@ -1,6 +1,11 @@
 # Sentiment Analysis Tool
 A supervised machine learning model for sentiment analysis, trained on the NLTK movie reviews dataset. The model predicts whether a text review is positive or negative.
 
+## Context
+This project represents my first hands-on attempt at training a machine learning model using a well-established dataset. I chose sentiment analysis because it has broad applications — from analyzing product reviews to detecting harmful content online. In particular, sentiment classification can contribute to efforts in identifying bullying or hate speech by analyzing linguistic patterns, helping to reduce harm in digital spaces.
+
+To deepen my understanding, I implemented three versions of the tool, each with a different model. This iterative approach allowed me to compare model behavior, experiment with feature extraction, and evaluate the trade-offs between accuracy, precision, and recall.
+
 ## Features
 - Preprocessing using TF-IDF vectorization
 - Supports n-grams for improved phrase-level sentiment detection

@@ -1,42 +1,25 @@
 # Sentiment Analysis Tool
-This is a supervised machine learning model for text classification, as the model learns from labelled examples.
+A supervised machine learning model for sentiment analysis, trained on the NLTK movie reviews dataset. The model predicts whether a text review is positive or negative.
+
+## Features
+- Preprocessing using TF-IDF vectorization
+- Supports n-grams for improved phrase-level sentiment detection
+- Custom prediction function for user-input text
+- Multiple Model versions for experimentation and comparision
+  - Version 1 (baseline): Naive Bayes (unigrams)
+  - Version 2: Naive Bayes (unigrams + bigrams)
+  - Version 3: Logistic Regression
 
 ## Results 
 | Version | Model           | Accuracy | Neg Recall | Pos Recall | Comments   |
 |---------|-----------------|----------|------------|------------|------------|
 | 01      | NB (unigrams)   | 0.7925   | 0.85       | 0.74       | too pessimistic
-| 02      | NB (uni+bi)     | 0.8      | 0.84       | 0.76       | Slight improvement in positive recall but best to switch models
-| 03      | Logistic Regression | 0.8225 | 0.80     | 0.84       | Significant improvement in pos recall but not as good in neg
-## Most “positive” and “negative” phrases according to version 03
+| 02      | NB (unigrams+bigrams)     | 0.8      | 0.84       | 0.76       | Slight improvement in positive recall
+| 03      | Logistic Regression | 0.8225 | 0.80     | 0.84       | Significant improvement in positive recall
+
+## Top n-grams in version 3
 Top positive n-grams:
-- great
-- life
-- war
-- family
-- excellent
-- truman
-- best
-- perfect
-- mulan
-- world
-- overall
-- perfectly
-- jackie
-- performance
-- terrific
+great, life, war, family, excellent, truman, best, perfect, mulan, world, overall, perfectly, jackie, performance, terrific
+
 Top negative n-grams:
-- bad
-- worst
-- plot
-- movie
-- boring
-- supposed
-- script
-- harry
-- reason
-- stupid
-- waste
-- unfortunately
-- mess
-- ridiculous
-- looks
+bad, worst, plot, movie, boring, supposed, script, harry, reason, stupid, waste, unfortunately, mess, ridiculous, looks

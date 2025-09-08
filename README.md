@@ -7,13 +7,13 @@ This project represents my first hands-on attempt at training a machine learning
 To deepen my understanding, I implemented three versions of the tool, each with a different model. This iterative approach allowed me to compare model behavior, experiment with feature extraction, and evaluate the trade-offs between accuracy, precision, and recall.
 
 ## Features
-- Preprocessing using TF-IDF vectorization
-- Supports n-grams for improved phrase-level sentiment detection
-- Custom prediction function for user-input text
-- Multiple Model versions for experimentation and comparision
-  - Version 1 (baseline): Naive Bayes (unigrams)
-  - Version 2: Naive Bayes (unigrams + bigrams)
-  - Version 3: Logistic Regression
+- Text preprocessing with TF-IDF: Converts raw text into numerical feature vectors for model training.
+- N-gram support: Captures single words as well as multi-word phrases to improve context understanding.
+- Custom prediction function: Allows users to input their own text and receive a sentiment prediction.
+- Iterative model versions:
+  - Version 1 (Baseline): Naive Bayes with unigrams
+  - Version 2: Naive Bayes with unigrams + bigrams
+  - Version 3: Logistic Regression with unigrams, bigrams, and trigrams
 
 ## Results 
 | Version | Model           | Accuracy | Neg Recall | Pos Recall | Comments   |
@@ -28,3 +28,15 @@ great, life, war, family, excellent, truman, best, perfect, mulan, world, overal
 
 Top negative n-grams:
 bad, worst, plot, movie, boring, supposed, script, harry, reason, stupid, waste, unfortunately, mess, ridiculous, looks
+
+## Quick Start Guide
+Use the following steps to run the project:
+
+1. Clone the repository - git clone https://github.com/noush-05/Sentiment-Analysis-Tool.git
+cd Sentiment-Analysis-Tool
+
+2. Install dependancies - pip install -r requirements.txt
+
+3.  Download the NLTK movie_reviews dataset -
+   import nltk
+   nltk.download('movie_reviews')

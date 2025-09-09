@@ -35,11 +35,17 @@ Use the following steps to run the project:
 1. Clone the repository - git clone https://github.com/noush-05/Sentiment-Analysis-Tool.git
 cd Sentiment-Analysis-Tool
 
-2. Install dependancies - pip install -r requirements.txt
+2. Install dependencies - pip install -r requirements.txt
 
 3.  Download the NLTK movie_reviews dataset -
    import nltk
    nltk.download('movie_reviews')
 
 4. Run a model version -
-   python src/
+  e.g. python src/version1.py
+
+5. Test with your own statements -
+   from src.version3 import predict_sentiment
+   print(predict_sentiment("I loved this movie!"))   
+   print(predict_sentiment("The plot was boring."))  
+

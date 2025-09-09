@@ -40,3 +40,6 @@ cd Sentiment-Analysis-Tool
 3.  Download the NLTK movie_reviews dataset -
    import nltk
    nltk.download('movie_reviews')
+
+4. Run a model version -
+   python src/

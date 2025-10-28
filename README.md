@@ -35,7 +35,7 @@ Use the following steps to run the project:
 1. Clone the repository - git clone https://github.com/noush-05/Sentiment-Analysis-Tool.git
 cd Sentiment-Analysis-Tool
 
-2. Install dependencies - pip install -r requirements.txt
+2. Install dependencies outlined in the requirements file
 
 3.  Download the NLTK movie_reviews dataset -
    import nltk
